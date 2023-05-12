@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ body {
     margin: 0 auto;
 }
 
-.containerNav {
+.containerNav1 {
     /* border: 1px solid yellow; */
     width: 40%;
     height: 100%;
@@ -94,43 +94,176 @@ body {
 
 }
 
-.carrossel{
+.slider{
     /* border: 3px solid red; */
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20vh;
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 8%;
 }
 
-.carrosselContainer {
-    height: 50vh;
-    overflow: hidden;
-    position: relative;
-    /* border: 3px solid rgb(0, 255, 21); */
-
-  }
-  
-  .carrosselSlide1 {
+.slides{
+    width: 400%;
+    height: 400px;
     display: flex;
-    width: 50vw;
-  }
+}
 
-  .carrosselSlide1 img {
-    width: 50vw;
-    height: 50vh;
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
     float: left;
-  }
-  
-  .carrosselPrev, .carrosselNext {
+}
+
+.manualNav{
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.manualBtn{
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-top: -10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.manualBtn:not(:last-child){
+    margin-right: 6px;
+}
+
+.manualBtn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125%;
+}
+
+#radio7:checked ~ .first{
+    margin-left: -150%;
+}
+
+#radio8:checked ~ .first{
+    margin-left: -175%;
+}
+
+#radio9:checked ~ .first{
+    margin-left: -200%;
+}
+
+#radio10:checked ~ .first{
+    margin-left: -225%;
+}
+
+.containerNav div{
+    border: 2px solid#20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 30px;
+}
+
+.containerNav{
+    /* border: 3px solid blue; */
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerNav div:not(:last-child){
+    margin-right: 6px;
+}
+
+#radio1:checked ~ .containerNav .autoBtn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .containerNav .autoBtn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .containerNav .autoBtn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .containerNav .autoBtn4{
+    background-color: #fff;
+}
+
+#radio5:checked ~ .containerNav .autoBtn5{
+    background-color: #fff;
+}
+
+#radio6:checked ~ .containerNav .autoBtn6{
+    background-color: #fff;
+}
+
+#radio7:checked ~ .containerNav .autoBtn7{
+    background-color: #fff;
+}
+
+#radio8:checked ~ .containerNav .autoBtn8{
+    background-color: #fff;
+}
+
+#radio9:checked ~ .containerNav .autoBtn9{
+    background-color: #fff;
+}
+
+#radio10:checked ~ .containerNav .autoBtn10{
+    background-color: #fff;
+}
+
+/* .carrosselPrev, .carrosselNext {
+    border: 3px solid green;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 50px;
     margin-top: 50px;
+    justify-content: center;
+    align-items: center;
 
-}
+} 
 
 .carrosselPrev {
     display: flex;
@@ -144,7 +277,7 @@ body {
 }
 
 .carrosselNext {
-    /* right: 0; */
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,25 +286,5 @@ body {
     height: 90px;
     background: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
     background: linear-gradient( to right, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
-    /* background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(18,27,69,1) 60%); */
-}
+} */
 
-
-@media (max-width:1300px){
-    .containerSessao{
-        display: none;
-    }
-}
-
-@media (max-width:1050px){
-    .containerNav{
-        display: none;
-    }
-}
-
-@media (max-width:900px){
-    .logoSteam{
-        display: none;
-    }
-}

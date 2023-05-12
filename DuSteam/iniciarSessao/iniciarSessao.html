@@ -52,24 +52,18 @@
         </header>
         <header class="containerIniciarSessao">
             <div class="txt">
-                <h1 class="h1">Iniciar Sessão</h1>
+                <h1> Iniciar Sessão </h1>
             </div>
-            <div class="meioDoSteam">
+            <form>
+                <label for="usuario">INICIAR SESSÃO COM O NOME DE USUÁRIO</label>
+                <input type="text" name="usuario">
+                <label for="senha">SENHA</label>
+                <input type="password" name="senha">
                 <br>
-                <br>
-                <div class="login">
-                    <label for="email">INICIAR SESSÃO COM O NOME DE USUARIO</label>
-                    <br>
-                    <input id="email" type="email">
-                    <br>
-                    <label for="senha">SENHA</label>
-                    <br>
-                    <input id="senha" type="senha">
-                    <br>
-                    <button>ENTRAR</button>
-                </div>
-            </div>
+                <input type="submit" name="acao" value="Iniciar sessão">
+            </form>
         </header>
+
     </div>    
 </body>
 </html>

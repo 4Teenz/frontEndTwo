@@ -3,9 +3,14 @@ const carrosselImage = document.querySelectorAll(".carrosselSlide1 img");
 const prevBtn = document.querySelector(".carrosselPrev");
 const nextBtn = document.querySelector(".carrosselNext");
 let currentIndex = 0;
+let counter = 1;
+const size = carrosselImage[0].clientWidth;
+
+
+                  // BOTÃO
 
 function slideTo(index) {
-    carrosselSlide.style.transform = `translateX(-${index * 1000}px)`;
+    carrosselSlide.style.transform = `translateX(-${index * 50}vw)`;
   currentIndex = index;
 }
 
@@ -24,3 +29,15 @@ nextBtn.addEventListener("click", () => {
     slideTo(currentIndex + 1);
   }
 });
+
+                // CARROSSEL AUTOMATICO
+
+setInterval(() => {
+  carrosselSlide.style.transition = 'transform 1s ease-in-out';
+  carrosselSlide.style.transform = `translateX(${-size * currentIndex}px)`;
+  currentIndex++;
+
+  if(currentIndex === carrosselImage.length){
+    currentIndex = 0;
+  }
+}, 4000)

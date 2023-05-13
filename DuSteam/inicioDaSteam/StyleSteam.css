@@ -253,7 +253,7 @@ body {
     background-color: #fff;
 }
 
-/* .carrosselPrev, .carrosselNext {
+.carrosselPrev, .carrosselNext {
     border: 3px solid green;
     top: 50%;
     transform: translateY(-50%);
@@ -286,5 +286,5 @@ body {
     height: 90px;
     background: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
     background: linear-gradient( to right, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
-} */
+}
 

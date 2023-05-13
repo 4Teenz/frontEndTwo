@@ -9,7 +9,6 @@ body {
 }
 .steam {
     background-image: url(/icon/Header_1.jpg);
-    background-color: rgba(0, 0, 0, 0.1);
     width: 100vw;
     height: 100vh;
 
@@ -103,16 +102,18 @@ body {
     padding: 20px;
     position: absolute;
     display: flex;
-    left: 30%;
-    top: 20%;
+    left: 28%;
+    top: 23.5%;
     font-family: "Motiva Suns", Sans-serif;
     font-size: 18px; 
 }
 
 form{
     background-color: #181a21;
-    max-width: 500px;
+    max-width: 800px;
+    max-height: 350px;
     width: 70%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +139,7 @@ form label[for=senha]{
 
 form input[type=text],
 form input[type=password]{
-    width: 97%;
+    width: 50%;
     height: 45px;
     color: #fff;
     border: 1px solid #32353c;
@@ -153,9 +154,10 @@ form input[type=password]:hover{
 }
 
 form input[type=submit]{
-    width: 40%;
+    width: 30%;
     height: 40px;
     cursor: pointer;
+    margin-left: 10%;
     background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
     color: #fff;
     border: 0;
@@ -163,5 +165,11 @@ form input[type=submit]{
 }
 
 form input[type=submit]:hover{
-    background-color: rgb(61, 131, 131);
+    background-color: #2D73FF;
+}
+
+form .qrCode{
+    width: 20%;
+    margin-left: 70%;
+    margin-bottom: 50%;
 }

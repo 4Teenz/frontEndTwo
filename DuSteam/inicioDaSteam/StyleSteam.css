@@ -1,6 +1,9 @@
-body {
+*{
     margin: 0;
     padding: 0;
+}
+
+body {
     width: 100%;
     height: 100%;
     display: flex;
@@ -95,7 +98,7 @@ body {
 }
 
 .slider{
-    /* border: 3px solid red; */
+    border: 3px solid red;
     margin: 0 auto;
     width: 800px;
     height: 400px;
@@ -266,6 +269,7 @@ body {
 } 
 
 .carrosselPrev {
+    margin-left: 26%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,7 +281,9 @@ body {
 }
 
 .carrosselNext {
-    right: 0;
+    border: 2px solid red ;
+    position: absolute;
+    margin-left: 110%;
     display: flex;
     justify-content: center;
     align-items: center;

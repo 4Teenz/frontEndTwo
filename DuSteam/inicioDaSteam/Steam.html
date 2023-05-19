@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,29 +10,32 @@
     <link rel="icon" href="../icon/pngwing.com (6) (1).png">
     <title>Bem-vindo(a) ao Steam</title>
 </head>
+
 <body>
     <div class="steam">
         <header class="topoDoSite">
             <div class="containerLogo">
-                <div class="logoSteam"> 
-                    
-                    <img class="logo" src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="steam">
-                    
+                <div class="logoSteam">
+
+                    <img class="logo"
+                        src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+                        alt="steam">
+
                 </div>
                 <div class="containerNav1">
-                    
+
                     <button class="btn" type="button">
                         LOJA
                     </button>
-                    
+
                     <button class="btn2" type="button">
                         COMUNIDADE
                     </button>
-                    
+
                     <button class="btn3" type="button">
                         SOBRE
                     </button>
-                    
+
                     <button class="btn4" type="button">
                         SUPORTE
                     </button>
@@ -48,11 +52,11 @@
                         Idioma
                     </button>
                 </div>
-            </div> 
+            </div>
         </header>
-        <header>
+        <section class="containerSlide">
+            <a class="carrosselPrev" onclick="prevImage()">&#10094;</a>
             <div class="slider">
-                <a class="carrosselNext" onclick="nexImage()">&#10095;</a>
                 <div class="slides">
                     <input type="radio" name="radioBtn" id="radio1" class="1" onclick="updateVariavel(event)">
                     <input type="radio" name="radioBtn" id="radio2" class="2" onclick="updateVariavel(event)">
@@ -69,7 +73,7 @@
                         <img src="../icon/header.jpg" alt="FARCRY 6">
                     </div>
                     <div class="slide 2">
-                        <img src="../icon/header (1).jpg"alt="STRAY">
+                        <img src="../icon/header (1).jpg" alt="STRAY">
                     </div>
                     <div class="slide 3">
                         <img src="../icon/header (2).jpg" alt="FIFA 23">
@@ -109,21 +113,21 @@
                     </div>
                 </div>
                 <div class="manualNav">
-                     <label for="radio1" class="manualBtn"></label>
-                     <label for="radio2" class="manualBtn"></label>
-                     <label for="radio3" class="manualBtn"></label>
-                     <label for="radio4" class="manualBtn"></label>
-                     <label for="radio5" class="manualBtn"></label>
-                     <label for="radio6" class="manualBtn"></label>
-                     <label for="radio7" class="manualBtn"></label>
-                     <label for="radio8" class="manualBtn"></label>
-                     <label for="radio9" class="manualBtn"></label>
-                     <label for="radio10" class="manualBtn"></label>
-                    </div>
+                    <label for="radio1" class="manualBtn"></label>
+                    <label for="radio2" class="manualBtn"></label>
+                    <label for="radio3" class="manualBtn"></label>
+                    <label for="radio4" class="manualBtn"></label>
+                    <label for="radio5" class="manualBtn"></label>
+                    <label for="radio6" class="manualBtn"></label>
+                    <label for="radio7" class="manualBtn"></label>
+                    <label for="radio8" class="manualBtn"></label>
+                    <label for="radio9" class="manualBtn"></label>
+                    <label for="radio10" class="manualBtn"></label>
                 </div>
-                <a class="carrosselPrev" onclick="prevImage()">&#10094;</a>
             </div>
-        </header>
-    </div> 
+            <a class="carrosselNext" onclick="nexImage()">&#10095;</a>
+        </section>
+    </div>
 </body>
-</html> 
+
+</html>

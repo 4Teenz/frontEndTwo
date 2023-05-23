@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSteam.css">
+    <script src="Script.js" defer></script>
+    <link rel="icon" href="../icon/pngwing.com (6) (1).png">
+    <title>Bem-vindo(a) ao Steam</title>
+</head>
+
+<body>
+    <div class="steam">
+        <header class="topoDoSite">
+            <div class="containerNavgi">
+                <div class="logoSteam">
+                    <a href="./Steam.html">
+                        <img class="logo"
+                        src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+                        alt="steam"> 
+                    </a>
+
+                </div>
+                <div class="containerNavg">
+
+                    <button class="btn" type="button">
+                        <a href="./Steam.html">
+                            LOJA
+                        </a>
+                    </button>
+
+                    <button class="btn2" type="button">
+                        COMUNIDADE
+                    </button>
+
+                    <button class="btn3" type="button">
+                        SOBRE
+                    </button>
+
+                    <button class="btn4" type="button">
+                        SUPORTE
+                    </button>
+                </div>
+                <div class="containerSessao">
+                    <button class="instalarOSteam" type="button">
+                        <img src="https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1" alt="">
+                        Instalar o Steam
+                    </button>
+                    <button class="iniciarSessao" type="button">
+                        <a href="../iniciarSessao/iniciarSessao.html">
+                            Iniciar Sessão
+                        </a>
+                    </button>
+                    <div class="barraDivisora"></div>
+                    <button class="idioma" type="button">
+                        Idioma
+                        <img src="https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png" alt="">
+
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section class="containerSlide">
+            <a class="carrosselPrev" onclick="prevImage()">&#10094;</a>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radioBtn" id="radio1" class="1" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio2" class="2" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio3" class="3" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio4" class="4" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio5" class="5" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio6" class="6" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio7" class="7" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio8" class="8" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio9" class="9" onclick="updateVariavel(event)">
+                    <input type="radio" name="radioBtn" id="radio10" class="10" onclick="updateVariavel(event)">
+
+                    <div class="slide first">
+                        <img src="../icon/header.jpg" alt="FARCRY 6">
+                    </div>
+                    <div class="slide 2">
+                        <img src="../icon/header (1).jpg" alt="STRAY">
+                    </div>
+                    <div class="slide 3">
+                        <img src="../icon/header (2).jpg" alt="FIFA 23">
+                    </div>
+                    <div class="slide 4">
+                        <img src="../icon/header (3).jpg" alt="DOTA 2">
+                    </div>
+                    <div class="slide 5">
+                        <img src="../icon/header (4).jpg" alt="FORZA HORIZON 5">
+                    </div>
+                    <div class="slide 6">
+                        <img src="../icon/header (5).jpg" alt="GRAND THEFT AUTO V">
+                    </div>
+                    <div class="slide 7">
+                        <img src="../icon/header (6).jpg" alt="F1 23">
+                    </div>
+                    <div class="slide 8">
+                        <img src="../icon/header (7).jpg" alt="STUMBLE GUYS">
+                    </div>
+                    <div class="slide 9">
+                        <img src="../icon/header (8).jpg" alt="NBA 2K23">
+                    </div>
+                    <div class="slide 10">
+                        <img src="../icon/header (9).jpg" alt="CITIES SKYLINES">
+                    </div>
+                    <div class="containerNav">
+                        <div class="autoBtn1"></div>
+                        <div class="autoBtn2"></div>
+                        <div class="autoBtn3"></div>
+                        <div class="autoBtn4"></div>
+                        <div class="autoBtn5"></div>
+                        <div class="autoBtn6"></div>
+                        <div class="autoBtn7"></div>
+                        <div class="autoBtn8"></div>
+                        <div class="autoBtn9"></div>
+                        <div class="autoBtn10"></div>
+                    </div>
+                </div>
+                <div class="manualNav">
+                    <label for="radio1" class="manualBtn"></label>
+                    <label for="radio2" class="manualBtn"></label>
+                    <label for="radio3" class="manualBtn"></label>
+                    <label for="radio4" class="manualBtn"></label>
+                    <label for="radio5" class="manualBtn"></label>
+                    <label for="radio6" class="manualBtn"></label>
+                    <label for="radio7" class="manualBtn"></label>
+                    <label for="radio8" class="manualBtn"></label>
+                    <label for="radio9" class="manualBtn"></label>
+                    <label for="radio10" class="manualBtn"></label>
+                </div>
+            </div>
+            <a class="carrosselNext" onclick="nexImage()">&#10095;</a>
+        </section>
+    </div>
+</body>
+
+</html>

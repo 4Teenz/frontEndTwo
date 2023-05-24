@@ -27,7 +27,7 @@ body {
     
 }
 
-.containerNavgi {
+.containerTopoSteam {
     border: 1px solid green;
     width: 100%;
     height: 100%;
@@ -42,6 +42,7 @@ body {
     height: 10vh;
     display: flex;
     cursor: pointer;
+    min-width: 200px;
 }
 
 .logo {
@@ -50,13 +51,23 @@ body {
     height: 89px;
 }
 
-.containerNavg{
+.menu{
+    display: none;
+}
+
+
+.containerSteam{
     border: 1px solid red;
     width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    min-width: 300px;
+}
+
+.containerNav2{
+    display: none;
 }
 
 .btn , .btn2 , .btn3 , .btn4 {
@@ -91,6 +102,7 @@ body {
     justify-content: right;
     padding-top: 7px;
     margin-left: 10px;
+    min-width: 300px;
 }
 
 .instalarOSteam {
@@ -120,7 +132,7 @@ body {
 
 .iniciarSessao:hover{
     >a{
-
+        
         color: #fff;
     }
 }
@@ -326,6 +338,7 @@ body {
 
 .carrosselNext {
     /* border: 2px solid red ; */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,5 +347,53 @@ body {
     height: 90px;
     background: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
     background: linear-gradient( to right, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
+}
+
+.barraLateral{
+    display: none;
+}
+
+@media(max-width:900px){
+    .containerSteam , .containerSessao{
+        display: none;
+    }
+    
+    
+    .containerTopoSteam{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .logoSteam{
+        border: 3px solid #fff;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hamburguer{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .barraLateral{
+        display: flex;
+        position: absolute;
+    }
+    
+    .containerNavSteam{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+    }
+    .menu {
+        display: flex;
+    }
+    .open{
+        display: block;
+    }
 }
 

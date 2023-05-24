@@ -25,3 +25,12 @@ function prevImage(){
 function updateVariavel(evt) {
     count = evt.target.classList[0]
 }
+
+function menuShow(){
+    let menuMobile = document.querySelector('.barraLateral');
+    if(menuMobile.classList.contains('open')){
+        menuMobile.classList.remove('open');
+    }else{
+        menuMobile.classList.add('open');
+    } 
+}

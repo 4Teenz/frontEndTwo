@@ -7,26 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleSessao.css">
     <script src="scriptSessao.js" defer></script>
-    <link rel="icon" href="../icon/pngwing.com (6) (1).png">
+    <link rel="icon" href="./icon/pngwing.com (6) (1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Iniciar sessão</title>
 </head>
 
 <body>
+    <aside class="barraLateral">
+        <div class="containerNavSteam">
+    
+            <button class="btn" type="button">
+                <a href="./Steam.html">
+                    LOJA
+                </a>
+            </button>
+    
+            <button class="btn2" type="button">
+                COMUNIDADE
+            </button>
+    
+            <button class="btn3" type="button">
+                SOBRE
+            </button>
+    
+            <button class="btn4" type="button">
+                SUPORTE
+            </button>
+        </div>
+        
+    </aside>
     <div class="steam">
         <div class="fundoFadePreto">
             <header class="topoDoSite">
-                <div class="containerNavgi">
+                <div class="containerTopoSteam">
+                    <div class="menu">
+                        <button onclick="menuShow()" class="hamburguer"><img src="./icon/header_menu_hamburger.ico" alt=""></button>
+                    </div>
                     <div class="logoSteam">
-                        <a href="../inicioDaSteam/Steam.html">
+                        <a href="./inicioDaSteam/Steam.html">
 
                             <img class="logo"  src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="steam">
                         </a>
 
                     </div>
-                    <div class="containerNavg">
+                    <div class="containerSteam">
 
                         <button class="btn" type="button">
-                            <a href="../inicioDaSteam/Steam.html">
+                            <a href="./inicioDaSteam/Steam.html">
                                 LOJA                               
                             </a>
                         </button>
@@ -66,11 +95,11 @@
                 <h1 class="txt"> Iniciar Sessão </h1> 
                 <form>
                     <label for="usuario">INICIAR SESSÃO COM O NOME DE USUÁRIO</label>
-                    <input type="text" name="usuario">
+                    <input type="text" name="usuario" id="usuario">
                     <label for="senha">SENHA</label>
-                    <input type="password" name="senha">
+                    <input type="password" name="senha" id="senha">
                     <br>
-                    <input type="submit" name="acao" value="Iniciar sessão">
+                    <button type="submit" name="acao" id="btnLogar" onclick="logar()" >Iniciar sessão</button>
                 </form>
             </section>
         </div>
